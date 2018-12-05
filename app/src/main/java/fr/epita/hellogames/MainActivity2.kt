@@ -41,10 +41,10 @@ class MainActivity2 : AppCompatActivity(), View.OnClickListener {
                     // Changes texts here
 
                     Log.d("GAME", data.toString())
-                    Name.text = "Name :" + data.name
-                    nbPlayers.text = "Nb Players: " + data.players
-                    Type.text = "Type: " + data.type
-                    year.text = "Year : " + data.year.toString()
+                    Name.text =  data.name
+                    nbPlayers.text =  data.players
+                    Type.text = data.type
+                    year.text =data.year.toString()
                     if (data.description_fr != null)
                         desciption.text = data.description_fr
                     else
